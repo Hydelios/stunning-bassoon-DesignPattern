@@ -16,3 +16,4 @@ Some design pattern tricks for quick development
 
 行为型模式  
 行为型模式用于描述程序在运行时复杂的流程控制，即描述多个类或对象之间怎样相互协作共同完成单个对象都无法单独完成的任务，它涉及算法与对象间职责的分配。  
+ 
