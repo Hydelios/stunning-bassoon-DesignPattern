@@ -1,5 +1,5 @@
-# stunning-bassoon-DesignPattern
-Some design pattern tricks for quick development
+# DesignPattern
+Design pattern templates for quick development
 
 这个目录将主要涵盖各类设计模式在C++开发中的应用。主要目的是为了在项目开发过程中快速应用，同时兼顾学习会逐渐添加一些工程当中的开发实例并细化说明。
 
