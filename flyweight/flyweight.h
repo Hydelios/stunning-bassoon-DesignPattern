@@ -82,6 +82,7 @@ public:
             m_black->Draw();
             cout << "x:" << pos.x << "y:" << pos.y << endl;
         }
+        m_pos.push_back(pos);
     }
 };
 
