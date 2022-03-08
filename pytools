@@ -1,0 +1,23 @@
+
+import functools
+import subprocess
+import time
+import os
+
+def time_costing(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kargs):
+        start_time = time.time()
+        func(*args, **kargs)
+        end_time = time.time()
+        cost_time = end_time - start_time
+        print('[function:{}]time costing:{}'.format(func.__name__, cost_time))
+    return wrapper
+
+@time_costing
+def updating():
+    return len(subprocess.run(
+        'lsof -i', shell=True, stdout=subprocess.PIPE).stdout.strip())>0
+
+if __name__=='__main__':
+  updating()
